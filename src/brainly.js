@@ -5,21 +5,6 @@
  */
 
 
-// proxy client
-
-const ProxyClient = require('./proxyClient');
-const proxy = new ProxyClient();
-
-// mengatur output dari proxy ( dibuat function supaya output nya berubah?
-
-function proxyRes() {
-const listProx = proxy.gen();
-const random = Math.floor(Math.random() * listProx.length);
-const resultProx = listProx[random];
-
-return resultProx;
-}
-
 // depend package
 const req = require('request-promise');
 
